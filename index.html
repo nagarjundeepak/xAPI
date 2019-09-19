@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name='description' content='xAPI Bookmarking' />
+    <meta name='viewport' content='width=device-width, initial-scale=1' />
+    <meta name='theme-color' content='white' />
+    <link rel='stylesheet' href='css/style.css' />
+    <!--Bootstrap-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+    <title>xAPI Bookmarker</title>
+</head>
+
+<body>
+    <div class='container'>
+        <div><label>enter URL:</label></div>
+        <div><input type='search' class='url form-control' placeholder="url goes here" /></div>
+        <div><button class='submit btn btn-primary mt-2'>Enter</button></div>
+    </div>
+    <div class='container'>
+        <div class='frame'>
+            <iframe src='www.example.com' target='_parent' width='760' height='300' allowfullscreen title="web frame"
+                id='webFrame'></iframe>
+        </div>
+    </div>
+    <div class='container'>
+        <div><input type='search' value='' id='userTitle' class='form-control' placeholder="Content Title" /></div>
+    </div>
+    <div class='mt-2'>
+        <button class="record btn btn-danger">Direct Record</button>
+        <!-- <button class='dummy btn btn-warning'>Test</button> -->
+        <button class="generate btn btn-success ml-3">Generate</button>
+    </div>
+
+    </div>
+    <script src='js/index.js'></script>
+    <!-- <script src="js/xapiwrapper.min.js"></script> -->
+</body>
+
+</html>
