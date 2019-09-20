@@ -7541,7 +7541,7 @@ TinCan client library
         {
             definition: {
                 name: {
-                    "en-US": rbmDocumentTitle
+                    "en-US": document.title
                 },
                 type: ACT_TYPE
             }
