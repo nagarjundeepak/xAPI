@@ -7425,7 +7425,7 @@ TinCan client library
                             attrs: { "class": "rbmContentSection", style: contentSectionStyle },
                             children: [
                                 { tag: "label", text: "Object: " },
-                                { tag: "span", attrs: { "class": "rbmObject" }, text: rbmDocumentTitle }
+                                { tag: "span", attrs: { "class": "rbmObject" }, text: document.title }
                             ]
                         },
                         {
