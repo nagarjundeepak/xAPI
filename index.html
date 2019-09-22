@@ -47,6 +47,14 @@
     </div>
     <script src='js/index.js'></script>
     <!-- <script src="js/xapiwrapper.min.js"></script> -->
+<script>
+        if('serviceWorker' in navigator) {
+          navigator.serviceWorker.register('/sw.js')
+            .then(function() {
+                  console.log('Service Worker Registered');
+            });
+        }
+      </script>
 </body>
 
 </html>
